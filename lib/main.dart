@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_screenutil_sample/change_password_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(390, 844),
+      designSize: const Size(750, 1624),
       minTextAdapt: true,
       splitScreenMode: true,
       useInheritedMediaQuery: true,
@@ -19,9 +20,11 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'screenutil デモ',
           theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.grey,
           ),
-          home: const Scaffold(body: Center(child: Text('test'))),
+          routes: <String, WidgetBuilder>{
+            '/': (BuildContext context) => const ChangePasswordPage(),
+          },
         );
       },
     );
