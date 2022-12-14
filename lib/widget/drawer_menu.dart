@@ -10,7 +10,7 @@ class DrawerMenu extends StatelessWidget {
         children: [
           ListTile(
             title: const Text(
-              'パスワード再設定',
+              'キャンペーンクーポン',
             ),
             trailing: const Icon(
               Icons.chevron_right_outlined,
