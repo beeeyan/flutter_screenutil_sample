@@ -17,6 +17,15 @@ class DrawerMenu extends StatelessWidget {
             ),
             onTap: () => Navigator.pushNamed(context, '/'),
           ),
+          ListTile(
+            title: const Text(
+              'キャンペーンクーポン2',
+            ),
+            trailing: const Icon(
+              Icons.chevron_right_outlined,
+            ),
+            onTap: () => Navigator.pushNamed(context, '/part2'),
+          ),
         ],
       ),
     );
