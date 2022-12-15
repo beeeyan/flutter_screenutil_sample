@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_screenutil_sample/widget/drawer_menu.dart';
 
+// 「.w」「.h」両方を設定した場合
 class CouponPage extends StatelessWidget {
   const CouponPage({super.key});
 
@@ -26,7 +27,9 @@ class CouponPage extends StatelessWidget {
                 width: 700.w,
                 height: 700.h,
                 child: Image.asset(
-                  'assets/coupon_sample.png',
+                  // 'assets/coupon_sample.png',
+                  // 正方形の画像
+                  'assets/character_sports_soccer.png',
                   fit: BoxFit.fill,
                 ),
               ),

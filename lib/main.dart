@@ -8,7 +8,7 @@ import 'package:flutter_screenutil_sample/coupon_part3_page.dart';
 void main() {
   runApp(
     DevicePreview(
-      // enabled: false,
+      enabled: false,
       builder: (context) => const MyApp(),
     ),
   );

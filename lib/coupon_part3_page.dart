@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_screenutil_sample/widget/drawer_menu.dart';
 
+// Figmaの値をそのまま設定した場合
 class CouponPart3Page extends StatelessWidget {
   const CouponPart3Page({super.key});
 
@@ -26,7 +27,9 @@ class CouponPart3Page extends StatelessWidget {
                 width: 700,
                 height: 700,
                 child: Image.asset(
-                  'assets/coupon_sample.png',
+                  // 'assets/coupon_sample.png',
+                  // 正方形の画像
+                  'assets/character_sports_soccer.png',
                   fit: BoxFit.fill,
                 ),
               ),
