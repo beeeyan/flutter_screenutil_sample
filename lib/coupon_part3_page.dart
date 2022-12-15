@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_screenutil_sample/widget/drawer_menu.dart';
 
-class CouponPage extends StatelessWidget {
-  const CouponPage({super.key});
+class CouponPart3Page extends StatelessWidget {
+  const CouponPart3Page({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,35 +15,35 @@ class CouponPage extends StatelessWidget {
       drawer: const DrawerMenu(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(
-            left: 25.w,
-            right: 25.w,
-            top: 57.h,
+          padding: const EdgeInsets.only(
+            left: 25,
+            right: 25,
+            top: 57,
           ),
           child: Column(
             children: [
               SizedBox(
-                width: 700.w,
-                height: 700.h,
+                width: 700,
+                height: 700,
                 child: Image.asset(
                   'assets/coupon_sample.png',
                   fit: BoxFit.fill,
                 ),
               ),
-              SizedBox(
-                height: 23.h,
+              const SizedBox(
+                height: 23,
               ),
               const Text(
                 'アプリをダウンロードいただいた方限定！スプリングセールクーポン★ご提示でご購入金額から5%OFFさせていただきます。',
                 textAlign: TextAlign.center,
                 // style: TextStyle(fontSize: 26.sp),
               ),
-              SizedBox(
-                height: 48.h,
+              const SizedBox(
+                height: 48,
               ),
               Container(
-                width: 700.w,
-                height: 80.h,
+                width: 700,
+                height: 80,
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: const Color(0xFFB9B9B9),
@@ -58,12 +58,12 @@ class CouponPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 40.h,
+              const SizedBox(
+                height: 40,
               ),
               Container(
-                width: 700.w,
-                height: 100.h,
+                width: 700,
+                height: 100,
                 decoration: BoxDecoration(
                   color: const Color(0xFF909090),
                   borderRadius: BorderRadius.circular(10.r),

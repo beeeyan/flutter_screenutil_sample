@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_screenutil_sample/coupon_page.dart';
 import 'package:flutter_screenutil_sample/coupon_part2_page.dart';
+import 'package:flutter_screenutil_sample/coupon_part3_page.dart';
 
 void main() {
   runApp(
     DevicePreview(
-      //enabled: false,
+      // enabled: false,
       builder: (context) => const MyApp(),
     ),
   );
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
           routes: <String, WidgetBuilder>{
             '/': (BuildContext context) => const CouponPage(),
             '/part2': (BuildContext context) => const CouponPart2Page(),
+            '/part3': (BuildContext context) => const CouponPart3Page(),
           },
         );
       },
